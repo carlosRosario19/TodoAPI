@@ -11,6 +11,7 @@ namespace TodoAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            // Adding the fix here ...
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<TodoContext>(opt =>opt.UseInMemoryDatabase("TodoList"));
